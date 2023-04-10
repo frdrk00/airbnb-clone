@@ -16,9 +16,8 @@ const Counter: React.FC<CounterProps> = ({
     value,
     onChange
 }) => {
-
     const onAdd = useCallback(() => {
-            onChange(value +1)
+            onChange(value + 1)
     }, [onChange, value])
 
     const onReduce = useCallback(() => {
@@ -27,7 +26,8 @@ const Counter: React.FC<CounterProps> = ({
         }
 
         onChange(value - 1)
-    }, [value, onChange])
+    }, [onChange, value])
+
   return (
     <div className="flex flex-row items-center justify-between">
         <div className="flex flex-col">
@@ -59,7 +59,7 @@ const Counter: React.FC<CounterProps> = ({
                 {value}
             </div>
             <div 
-                onClick={onReduce} 
+                onClick={onAdd} 
                 className="
                     w-10 
                     h-10 
