@@ -12,7 +12,7 @@ const ErrorState: React.FC<ErrorStateProps> = ({
 }) => {
     useEffect(() => {
         console.error(error)
-    }, [])
+    }, [error])
 
     return (
         <EmptyState 
