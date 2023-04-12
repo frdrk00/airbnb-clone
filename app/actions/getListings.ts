@@ -44,13 +44,13 @@ export default async function getListings(
         }
         
         if (guestCount) {
-            query.roomCount = {
+            query.guestCount = {
                 gte: +guestCount
             }
         }
 
         if (bathroomCount) {
-            query.roomCount = {
+            query.bathroomCount = {
                 gte: +bathroomCount
             }
         }
